@@ -1,9 +1,15 @@
 .cars {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: rgb(65, 40, 23);
-  margin: 100px;
-  padding: 20px 10px;
+  color: #ecf0f1; /* Светлый текст */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Тень для лучшего контраста */
+  background-image: url('media/background222.avif'); /* Путь к изображению */
+  background-size: cover; /* Масштабирует изображение, чтобы заполнить весь блок */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Запрещает повторение изображения */
+  margin: 20px auto;
+  margin-inline: 0px; /* Уменьшаем отступы между пунктами меню */
+  padding: 100px 10px;
   text-align: center;
   color: tomato;
   text-transform: uppercase;
@@ -15,12 +21,27 @@ p {
 }
 
 a[href="#"] {
-  background-color: #e74c3c; /* Красный фон */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
+  background-color: rgb(99, 134, 215); /* Красный фон */
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  border-radius: 30px; /* загругление обводки текста */
   text-decoration: none;
   align-items: center;
+  text-align: center;
+}
+
+a[href="#"]:hover {
+  background-color: #c0392b; /* Темно-красный при наведении */
+}
+
+a[href="index.html"] {
+  background-color: rgb(209, 215, 229); /* Красный фон */
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  border-radius: 30px; /* загругление обводки текста */
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
 }
 
 a[href="#"]:hover {
@@ -50,39 +71,41 @@ footer a:hover {
 }
 
 .header {
-  background-color: #ecf0f1; /* Светлый фон (светло-серый) */
+  background-color: #0aa1bf; /* Светлый фон (светло-серый) */
   color: #2c3e50; /* Темный текст (темно-синий) */
-  height: 30vh; /* Высота равна высоте экрана */
+  height: 50vh; /* Высота равна высоте экрана */
   display: flex; /* Flexbox для выравнивания */
   justify-content: center; /* Горизонтальное центрирование */
   align-items: center; /* Вертикальное центрирование */
-  flex-direction:column /* Элементы выстраиваются вертикально */
+  flex-direction: column; /* Элементы выстраиваются вертикально */
+  margin-top: 0; /* Убираем отступ сверху */
 }
 
 header .logo img {
-  height: 100px; /* Размер логотипа */
-  margin-bottom: 0; /* Отступ между логотипом и навигацией */
+  height: 300px; /* Уменьшаем размер логотипа */
+  margin-bottom: 10px; /* Уменьшаем отступ между логотипом и навигацией */
 }
 
 header nav ul {
   list-style-type: none; /* Убираем маркеры у списка */
-  margin: 10px;
-  padding: 10px;
+  margin: 0; /* Убираем внешние отступы */
+  padding: 0; /* Убираем внутренние отступы */
   display: flex; /* Размещаем элементы списка в ряд */
 }
 
 header nav ul li {
-  margin: 30px; /* Отступы между пунктами меню */
+  margin-inline: 100px; /* Уменьшаем отступы между пунктами меню */
 }
 
 header nav ul li a {
   color: #2c3e50; /* Темный цвет ссылок */
-  text-decoration:dashed; /* Убираем подчеркивание у ссылок */
-  font-size: 40px; /* Увеличиваем размер шрифта */
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  font-size: 30px; /* Уменьшаем размер шрифта */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
 }
 
 header nav ul li a:hover {
-  text-decoration:none; /* Подчеркивание при наведении */
-  color: #db420b; /* Синий при наведении */
+  text-decoration: none; /* Убираем подчеркивание при наведении */
+  color: #db420b; /* Цвет при наведении */
 }
 
