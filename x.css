@@ -101,12 +101,12 @@ a[href="#"]:hover {
 footer a {
   color: #3498db; /* Цвет ссылок (синий) */
   text-decoration: none; /* Убираем подчеркивание у ссылок */
-  margin: 0 10px; /* Отступы между ссылками */
+  margin: 10px; /* Отступы между ссылками */
 }
 
 footer a:hover {
-  text-decoration: underline; /* Подчеркивание при наведении */
-  color: #2980b9;
+  text-decoration:wavy; /* Подчеркивание при наведении */
+  color: #e85123;
 }
 
 
